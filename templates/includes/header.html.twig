@@ -1,0 +1,26 @@
+<header>
+    <div class="logo">
+        <img src="{{ asset('images/logo.svg') }}" alt="Symfony!"/>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="{{ path('contact') }}">Contact</a></li>
+            <li>
+                <ul>
+                    <li><a href="{{ path('contactCity', {city: 'montpellier'}) }}">Contacter Montpellier</a></li>
+                    <li><a href="{{ path('contact', {name: "lelio"}) }}">Contacter de la part de Lelios</a></li>
+                    <li><a href="{{ path('contactCity', {city: 'montpellier', name: "lelio"}) }}">Contacter Montpellier
+                            de la
+                            part de Lelio</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="{{ path('blog') }}">Blog</a>
+            </li>
+            <li>
+                <a href="{{ path('blog_creation') }}">Créer un article</a>
+            </li>
+        </ul>
+    </nav>
+</header>

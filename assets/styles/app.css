@@ -1,0 +1,8 @@
+body {
+    background-color: lightgray;
+}
+
+@mixin getTitle {
+    font-weight: bold;
+    font-size: 14px;
+}
